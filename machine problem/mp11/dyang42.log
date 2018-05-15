@@ -1,0 +1,23 @@
+test_discriminator_loss (test_model.ModelTests) ... 2018-05-07 15:20:53.167190: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+ok
+test_discriminator_loss_shape (test_model.ModelTests) ... ok
+test_generator_loss (test_model.ModelTests) ... ok
+test_generator_loss_shape (test_model.ModelTests) ... ok
+test_ouput_shape (test_model.ModelTests) ... ERROR
+
+======================================================================
+ERROR: test_ouput_shape (test_model.ModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cs446grader/autograder/mp11_programming/submissions/dyang42/tests_autograder/test_model.py", line 23, in test_ouput_shape
+    self.model.z_placeholder: test_z})
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 1096, in _run
+    % (np_val.shape, subfeed_t.name, str(subfeed_t.get_shape())))
+ValueError: Cannot feed value of shape (10, 2) for Tensor 'Placeholder_3:0', which has shape '(?, 14)'
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.697s
+
+FAILED (errors=1)

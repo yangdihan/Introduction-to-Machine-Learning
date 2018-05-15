@@ -1,0 +1,28 @@
+test_forward_shape (test_model.ModelTests) ... ok
+test_forward_zero (test_model.ModelTests) ... ok
+test_loss_backward_no_loss (test_model.ModelTests) ... ok
+test_loss_backward_no_reg (test_model.ModelTests) ... ok
+test_loss_no_loss (test_model.ModelTests) ... ok
+test_loss_no_reg (test_model.ModelTests) ... ok
+test_no_loss_with_reg (test_model.ModelTests) ... ok
+test_analytic (test_analytic.ModelTests) ... ok
+test_first_row (test_io.IoToolsTests) ... ok
+test_one_hot (test_io.IoToolsTests) ... ERROR
+test_read_dataset_not_none (test_io.IoToolsTests) ... ok
+
+======================================================================
+ERROR: test_one_hot (test_io.IoToolsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cs446grader/autograder/mp2_programming/submissions/dyang42/tests_autograder/test_io.py", line 24, in test_one_hot
+    self.assertEqual(out, [1,0,0,0,0])
+  File "/software/python-3.4.3/lib/python3.4/unittest/case.py", line 797, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/software/python-3.4.3/lib/python3.4/unittest/case.py", line 787, in _baseAssertEqual
+    if not first == second:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.010s
+
+FAILED (errors=1)
